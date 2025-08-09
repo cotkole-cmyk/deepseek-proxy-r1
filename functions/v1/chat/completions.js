@@ -1,13 +1,3 @@
-// 强制使用 HTTP/3 和 TLS 1.3
-export async function onRequestPost({ request, env }) {
-  try {
-    // 添加 HTTP/3 支持
-    request.cf = {
-      httpProtocol: "http/3",
-      tlsVersion: "TLSv1.3",
-      cacheEverything: false
-    };
-    // 其余代码保持不变...
 // 注意：将 YOUR_ACCOUNT_ID 替换为您的真实账户ID
 const ACCOUNT_ID = "e60a2eebae4f96fba50cb5c2cc370ed16df6f";
 
