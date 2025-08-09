@@ -1,5 +1,0 @@
-{
-  "version": 1,
-  "include": ["/*"],  # 所有路径触发函数
-  "exclude": ["/static/*"]
-}
