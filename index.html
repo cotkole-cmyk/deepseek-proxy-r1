@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeepSeek-R1 Proxy Service</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .endpoint {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>DeepSeek-R1 Distill Qwen-32b Proxy</h1>
+  <p>Service is running successfully!</p>
+  
+  <h2>API Endpoints:</h2>
+  <div class="endpoint">GET /v1/models</div>
+  <div class="endpoint">POST /v1/chat/completions</div>
+  
+  <p>Deploy time: <span id="timestamp"></span></p>
+  
+  <script>
+    document.getElementById('timestamp').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
